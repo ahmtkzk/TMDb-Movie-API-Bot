@@ -64,6 +64,15 @@ for ($i = 1; $i <= 1000; $i++) {
             }
         }
 
+        $Turler = ""; //Genres
+
+        for ($t = 0; $t < count($Item3['genres']); $t++) {
+            $Turler = $Turler . $Item3['genres'][$t]['name'] . ", ";
+            if ($t == (count($Item3['genres']) - 1)) {
+                $Turler = rtrim($Turler, ", ");
+            }
+        }
+
     }
 
 
